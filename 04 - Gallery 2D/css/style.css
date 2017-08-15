@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.gallery {
+	width: 80vw;
+	height: 100vh;
+	position: relative;
+	top: -150px;
+}
+
+.picture {
+	height: auto;
+	position: absolute;
+}
