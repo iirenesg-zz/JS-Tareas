@@ -1,0 +1,86 @@
+// Hero image
+
+.hero-box {
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.hero-signature {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+}
+
+// Main sections
+
+.section-description {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20% 50px 0;
+  color: #fff;
+}
+
+.floating-title {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 75px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+// Photo modules
+
+.photo-description {
+  padding: 80px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.description-text {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+//Slider
+
+.slider {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  width: 30%;
+}
+
+// Elements
+
+.reservations {
+  margin-bottom: 20px;
+
+  span {
+    display: block;
+  }
+}
+
+.info span {
+  margin-left: 10px;
+}

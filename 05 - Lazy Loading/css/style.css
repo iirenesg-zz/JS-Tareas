@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px "Montserrat", sans-serif;
+  font-weight: 300; }
+
+section {
+  position: relative; }
+
+h2 {
+  font: 39px "Montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+p, ul, ol {
+  margin-bottom: 20px; }
+
+img {
+  display: block;
+}
+
+button {
+  text-transform: uppercase;
+  font: inherit;
+  padding: 10px 60px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all .2s;
+  cursor: pointer; }
+
+button:hover {
+  background-color: #fff;
+  color: #000; }
+
+.main-nav {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding: 30px 0 50px;
+  border-bottom: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff; }
+
+.menu {
+  text-align: center; }
+  .menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 33px; }
+  .menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .menu a:hover {
+    text-decoration: underline; }
+
+.main-left {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%; }
+
+.main-right {
+  position: absolute;
+  right: 0; }
+
+.secondary-nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 30px;
+  border-left: 1px solid #fff;
+  margin: 0; }
+.secondary-nav li:first-child {
+  border: none; }
+.secondary-nav a {
+  text-decoration: none;
+  color: inherit; }
+.secondary-nav a:hover {
+  text-decoration: underline; }
+
+.icon-trip {
+  width: 56px;
+  height: 40px;
+  background-image: url("../img/icons/icon-trip.png");
+  display: inline-block; }
+
+.icon-gps {
+  width: 21px;
+  height: 38px;
+  background-image: url("../img/icons/icon-gps.png");
+  display: inline-block; }
+
+.icon-waze {
+  width: 129px;
+  height: 38px;
+  background-image: url("../img/icons/icon-waze.png");
+  display: inline-block; }
+
+.hero-box {
+  position: relative; }
+
+.hero {
+  width: 100%; }
+
+.hero-title {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%; }
+
+.hero-signature {
+  position: absolute;
+  z-index: 2;
+  bottom: 0; }
+
+.section-description {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20% 50px 0;
+  color: #fff; }
+
+.floating-title {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 75px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px; }
+
+.photo-description {
+  padding: 80px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center; }
+
+.description-text {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.slider {
+  position: relative; }
+
+.caption {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  width: 30%; }
+
+.reservations {
+  margin-bottom: 20px; }
+  .reservations span {
+    display: block; }
+
+.info span {
+  margin-left: 10px; }
+
+.col-small {
+  position: absolute;
+  height: 100%;
+  background-color: #000;
+  float: left;
+  width: 30%; }
+
+.col-wide {
+  float: right;
+  width: 70%; }
+  .col-wide img {
+    width: 100%; }
+
+.col-half {
+  width: 50%;
+  float: left; }
+  .col-half img {
+    width: 100%; }
+
+.bg-wood {
+  background-image: url("../img/event_texture.jpg");
+  background-size: cover; }
+
+.menu-section {
+  text-align: center;
+  padding: 140px 0 65px;
+  background-image: url("../img/menu_texture.jpg");
+  background-size: cover; }
+
+.menu-section img {
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
