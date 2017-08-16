@@ -1,0 +1,10 @@
+.testing {
+  width: 71.42857%; }
+
+.anotherTest {
+  width: 100%; }
+  .anotherTest p {
+    width: 50%; }
+
+.anotherOtherTest {
+  margin-top: 0; }
