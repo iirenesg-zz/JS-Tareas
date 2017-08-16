@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, .gallery-container {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+}
+
+.buttons {
+	width: 100%;
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+.buttons button {
+	border: none;
+	border-radius: 50%;
+	background-color: #fff;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 24px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.buttons button:hover {
+	background-color: red;
+}
+
+.button-right {
+	float: right;
+}
+
+.gallery-container li {
+	list-style: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	float: left;
+}
+
+.gallery-container img {
+	width: 100%;
+}
