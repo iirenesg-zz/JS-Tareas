@@ -1,3 +1,9 @@
+/**
+ * Gallery constructor
+ *
+ * @class      Gallery (name)
+ * @param      {object}  images  Array with the image sources
+ */
 function Gallery(images) {
 	var self = this;
 

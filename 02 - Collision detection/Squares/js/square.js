@@ -1,3 +1,9 @@
+/**
+ * Square constructor
+ *
+ * @class      Square (name)
+ * @param      {object}  context  The canvas context
+ */
 function Square(context) {
 	this.pos = new Vector(getRandom(100, canvas.width-100), getRandom(100, canvas.height-100));
 	this.vel = new Vector(getRandom(-5, 5), getRandom(-5, 5));
@@ -5,6 +11,11 @@ function Square(context) {
 	this.vel.mult(10);
 	this.size = 100;
 
+	/**
+	 * Calls all the functions for each frame
+	 *
+	 * @param      {array}  array   The array of square objects in the scene
+	 */
 	this.run = function(array) {
 		this.update();
 		this.checkColissions(array);
@@ -12,10 +23,16 @@ function Square(context) {
 		this.display();
 	}
 
+	/**
+	 * Updates position
+	 */
 	this.update = function() {
 		this.pos.add(this.vel);
 	}
 
+	/**
+	 * Displays object in the scene
+	 */
 	this.display = function() {
 		context.beginPath();
 		context.rect(this.pos.x, this.pos.y, this.size, this.size);
@@ -23,6 +40,11 @@ function Square(context) {
       	context.fill();
 	}
 
+	/**
+	 * Checks whether the object is colliding with other object
+	 *
+	 * @param      {array}  array   The array of square objects in the scene
+	 */
 	this.checkColissions = function(array) {
 		for (var i = array.length - 1; i >= 0; i--) {
 
@@ -51,6 +73,9 @@ function Square(context) {
 		}
 	}
 
+	/**
+	 * Checks whether the object is colliding with the scene bounds
+	 */
 	this.checkEdges = function() {
 		if (this.pos.x + this.size > canvas.width) {
       		this.vel.x *= -1;
@@ -64,6 +89,13 @@ function Square(context) {
 	}
 }
 
+/**
+ * Gets a random number from a range
+ *
+ * @param      {number}  min     The minimum
+ * @param      {number}  max     The maximum
+ * @return     {number}  The random number.
+ */
 function getRandom(min, max) {
   return Math.random() * (max - min) + min;
 }

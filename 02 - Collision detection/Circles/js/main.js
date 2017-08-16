@@ -3,6 +3,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var cx = canvas.getContext('2d');
 
+/**
+ * Initializes requestAnimationFrame functionality
+ *
+ * @param      {object}  window    The window object
+ */
 (function init(window) {
 
 	var requestAnimationFrame = window.requestAnimationFrame || 
@@ -30,7 +35,11 @@ var cx = canvas.getContext('2d');
 
 })(window);
 
-
+/**
+ * Runs each circle object function
+ *
+ * @param      {number}  time    The time
+ */
 function animate(time) {
 	var progress = time - game.start;
 

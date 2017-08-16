@@ -1,3 +1,9 @@
+/**
+ * Circle constructor
+ *
+ * @class      Circle (name)
+ * @param      {object}  context  The canvas context
+ */
 function Circle(context) {
 	this.pos = new Vector(getRandom(100, canvas.width-100), getRandom(100, canvas.height-100));
 	this.vel = new Vector(getRandom(-5, 5), getRandom(-5, 5));
@@ -5,6 +11,11 @@ function Circle(context) {
 	this.vel.mult(10);
 	this.rad = 50;
 
+	/**
+	 * Calls all the functions for each frame
+	 *
+	 * @param      {array}  array   The array of circle objects in the scene
+	 */
 	this.run = function(array) {
 		this.update();
 		this.checkColissions(array);
@@ -12,10 +23,16 @@ function Circle(context) {
 		this.display();
 	}
 
+	/**
+	 * Updates position
+	 */
 	this.update = function() {
 		this.pos.add(this.vel);
 	}
 
+	/**
+	 * Displays object in the scene
+	 */
 	this.display = function() {
 		context.beginPath();
       	context.arc(this.pos.x, this.pos.y, this.rad, 0, 2 * Math.PI, false);
@@ -23,6 +40,11 @@ function Circle(context) {
       	context.fill();
 	}
 
+	/**
+	 * Checks whether the object is colliding with other object
+	 *
+	 * @param      {array}  array   The array of circle objects in the scene
+	 */
 	this.checkColissions = function(array) {
 		for (var i = array.length - 1; i >= 0; i--) {
 
@@ -43,6 +65,9 @@ function Circle(context) {
 		}
 	}
 
+	/**
+	 * Checks whether the object is colliding with the scene bounds
+	 */
 	this.checkEdges = function() {
 		if (this.pos.x + this.rad > canvas.width) {
       		this.vel.x *= -1;
@@ -56,6 +81,13 @@ function Circle(context) {
 	}
 }
 
+/**
+ * Gets a random number from a range
+ *
+ * @param      {number}  min     The minimum
+ * @param      {number}  max     The maximum
+ * @return     {number}  The random number.
+ */
 function getRandom(min, max) {
   return Math.random() * (max - min) + min;
 }
